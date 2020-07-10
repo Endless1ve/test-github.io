@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <h3 class="header-title">Шапка сайта</h3>
+    </header>
+
+    <section class="search">
+        <div class="search-block">
+            <div class="input-block">
+                <img class="input-block-image" src="./images/Frame.svg" alt="лупа">
+                <input class="search-input" type="text">
+            </div>
+            <button class="search-button">Найти</button>
+            <button class="close-button">Закрыть</button>
+        </div>
+        <div class="search-result">
+            <h2 class="result-title">Результаты по запросу</h2>
+            <p class="result-text">Показаны результаты для <span>“Зaпрос пользователя”</span>. Вы искали <span>“Зaпрос пользователя”</span>.</p>
+        </div>
+        <div class="search-categories">
+            <div class="categories-card">
+                <div class="card-image"></div>
+                <div class="card-text">
+                    <p class="text-title">Название категории</p>
+                    <p class="text-paragraph">134 товара</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="card-image"></div>
+                <div class="card-text">
+                    <p class="text-title">Название категории</p>
+                    <p class="text-paragraph">134 товара</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="card-image"></div>
+                <div class="card-text">
+                    <p class="text-title">Название категории</p>
+                    <p class="text-paragraph">134 товара</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="card-image"></div>
+                <div class="card-text">
+                    <p class="text-title">Название категории</p>
+                    <p class="text-paragraph">134 товара</p>
+                </div>
+            </div>
+            <div class="categories-card">
+                <div class="card-image"></div>
+                <div class="card-text">
+                    <p class="text-title">Название категории</p>
+                    <p class="text-paragraph">134 товара</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="content-options">
+            <div class="options-categories">
+                <p class="categories-title">Все категории</p>
+                <a href="#" class="categories-link">Категория в которой нашли что-то (ххх)</a>
+                <a href="#" class="categories-link">Категория в которой нашли что-то (ххх)</a>
+                <a href="#" class="categories-link">Категория в которой нашли что-то (ххх)</a>
+                <a href="#" class="categories-link">Категория в которой нашли что-то (ххх)</a>
+                <a href="#" class="categories-link">Категория в которой нашли что-то (ххх)</a>
+                <a href="#" class="categories-link">Категория в которой нашли что-то (ххх)</a>
+                <a href="#" class="categories-link">Категория в которой нашли что-то (ххх)</a>
+                <a href="#" class="categories-link">Категория в которой нашли что-то (ххх)</a>
+                <a href="#" class="categories-link">Ещё 10 категорий...</a>
+            </div>
+            <div class="options-price">
+                <p class="price-text">Цена, валюта</p>
+                <div class="price-content">
+                    <p class="price-content-text">от</p>
+                    <input class="price-input" type="text" placeholder="1000">
+                    <p class="price-content-text">до</p>
+                    <input class="price-input" type="text" placeholder="1 000 000">
+                    <p class="price-content-text">P</p>
+                </div>
+                <div style="position: relative;">
+                    <input type="range" min="12" max="2175" value="12" class="slider" id="lower">
+                    <input type="range" min="12" max="2175" value="2175" class="slider" id="higher">
+                </div>
+            </div>
+            <div class="options-brands">
+                <div class="brands-text">
+                    <p class="brands-title">Бренды</p>
+                    <p class="brands-clear">Очистить</p>
+                </div>
+                <div class="options-brand">
+                    <input class="brand-input" type="checkbox" value="Бренд" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                    <p class="brand-text">Бренд <span class="brand-span">(xxx)</span></p>
+                </div>
+                <div class="options-brand" >
+                    <input class="brand-input" type="checkbox" value="Бренд" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                    <p class="brand-text">Бренд <span class="brand-span">(x)</span></p>
+                </div>
+                <div class="options-brand">
+                    <input class="brand-input" type="checkbox" value="Бренд" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                    <p class="brand-text">Бренд <span class="brand-span">(x xxx)</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="content-cards">
+            <div class="cards-sort">
+                <p class="sort-text">Сортировать по:</p>
+                <a href="" class="sort-option">популярности</a>
+                <a href="" class="sort-option">сначала дешевые</a>
+                <a href="" class="sort-option">сначала дорогие</a>
+                <div class="sort-view">
+                    <p class="view-text">показывать по</p>
+                    <select id="view-value">
+                        <option>9</option>
+                        <option>18</option>
+                        <option>24</option>
+                    </select>
+                </div>
+               
+            </div>
+            <div class="cards-clarifications">
+                <div class="cards-clarificaion"><p class="clarification-text">Уточнение</p></div>
+                <div class="cards-clarificaion"><p class="clarification-text">Уточнение</p></div>
+                <div class="cards-clarificaion"><p class="clarification-text">Уточнение</p></div>
+                <div class="cards-clarificaion"><p class="clarification-text">Уточнение</p></div>
+            </div>
+            <div class="cards-content">
+
+                <div class="content-card">
+                    <img src="./images/Rectangle 4.svg" alt="" class="content-card-image">
+                    <p class="card-title">Наименование товара, которое не более 2 строк</p>
+                    <div class="card-prices">
+                        <p class="card-price">ХХ ХХХ , $</p>
+                        <p class="card-price fixed">ХХ ХХХ $</p>
+                    </div>
+                    <button class="card-button">Кнопка</button>
+                </div>
+
+                <div class="content-card">
+                    <img src="./images/Rectangle 4.svg" alt="" class="content-card-image">
+                    <p class="card-title">Наименование товара, которое не более 2 строк</p>
+                    <div class="card-prices">
+                        <p class="card-price">ХХ ХХХ , $</p>
+                        <p class="card-price fixed">ХХ ХХХ $</p>
+                    </div>
+                    <button class="card-button">Кнопка</button>
+                </div>
+
+                <div class="content-card">
+                    <img src="./images/Rectangle 4.svg" alt="" class="content-card-image">
+                    <p class="card-title">Наименование товара, которое не более 2 строк</p>
+                    <div class="card-prices">
+                        <p class="card-price">ХХ ХХХ , $</p>
+                        <p class="card-price fixed">ХХ ХХХ $</p>
+                    </div>
+                    <button class="card-button">Кнопка</button>
+                </div>
+
+                <div class="content-card">
+                    <img src="./images/Rectangle 4.svg" alt="" class="content-card-image">
+                    <p class="card-title">Наименование товара, которое не более 2 строк</p>
+                    <div class="card-prices">
+                        <p class="card-price">ХХ ХХХ , $</p>
+                        <p class="card-price fixed">ХХ ХХХ $</p>
+                    </div>
+                    <button class="card-button">Кнопка</button>
+                </div>
+
+                <div class="content-card">
+                    <img src="./images/Rectangle 4.svg" alt="" class="content-card-image">
+                    <p class="card-title">Наименование товара, которое не более 2 строк</p>
+                    <div class="card-prices">
+                        <p class="card-price">ХХ ХХХ , $</p>
+                        <p class="card-price fixed">ХХ ХХХ $</p>
+                    </div>
+                    <button class="card-button">Кнопка</button>
+                </div>
+
+                <div class="content-card">
+                    <img src="./images/Rectangle 4.svg" alt="" class="content-card-image">
+                    <p class="card-title">Наименование товара, которое не более 2 строк</p>
+                    <div class="card-prices">
+                        <p class="card-price">ХХ ХХХ , $</p>
+                        <p class="card-price fixed">ХХ ХХХ $</p>
+                    </div>
+                    <button class="card-button">Кнопка</button>
+                </div>
+
+                <div class="content-card">
+                    <img src="./images/Rectangle 4.svg" alt="" class="content-card-image">
+                    <p class="card-title">Наименование товара, которое не более 2 строк</p>
+                    <div class="card-prices">
+                        <p class="card-price">ХХ ХХХ , $</p>
+                        <p class="card-price fixed">ХХ ХХХ $</p>
+                    </div>
+                    <button class="card-button">Кнопка</button>
+                </div>
+
+                <div class="content-card">
+                    <img src="./images/Rectangle 4.svg" alt="" class="content-card-image">
+                    <p class="card-title">Наименование товара, которое не более 2 строк</p>
+                    <div class="card-prices">
+                        <p class="card-price">ХХ ХХХ , $</p>
+                        <p class="card-price fixed">ХХ ХХХ $</p>
+                    </div>
+                    <button class="card-button">Кнопка</button>
+                </div>
+
+                <div class="content-card">
+                    <img src="./images/Rectangle 4.svg" alt="" class="content-card-image">
+                    <p class="card-title">Наименование товара, которое не более 2 строк</p>
+                    <div class="card-prices">
+                        <p class="card-price">ХХ ХХХ , $</p>
+                        <p class="card-price fixed">ХХ ХХХ $</p>
+                    </div>
+                    <button class="card-button">Кнопка</button>
+                </div>
+            </div>
+            <div class="cards-pages">
+                <img src="./images/Vector.png" alt="" class="pages-image rotate">
+                <a class="cards-page">2</a>
+                <a class="cards-page">3</a>
+                <a class="cards-page">...</a>
+                <a class="cards-page">13</a>
+                <img src="./images/Vector.png" alt="" class="pages-image">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
