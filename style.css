@@ -405,7 +405,7 @@
     transition: 1s;
 }
 
-.card-button-image:hover{
+.card-button:hover{
     transform: scale(1.1);
 }
 
